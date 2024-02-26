@@ -6,12 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>NLP Madlibs</title>
     <link rel="stylesheet" href="/css/style.css">
+    <script defer src="script.js"></script>
   </head>
   <body>
     <h1>NLP Madlibs</h1>
     <div id="container">
-      <div id="madlibs">
-        <div id="madlib">
           <div id="madlib-title">
             <h2>Madlibs</h2>
           </div>
@@ -22,14 +21,34 @@
             </p>
           </div>
           <div id="madlib-buttons">
-            <button id="play-button">Play</button>
-            <button id="reset-button">Reset</button>
+            <p>
+              In a [adjective] world, where [plural noun] roam freely and [adjective] [plural noun] sing in harmony, 
+              there lived a [adjective] [noun] who dreamed of [verb ending in -ing] to the top of the tallest [noun].
+            </p>
           </div>
-        </div>
+          <div id="input-form">
+            <form id="myForm">
+              <label for="name">adjective:</label>
+              <input type="text" id="adj1" name="adj1"><br><br>
+              <label for="email">plural noun:</label>
+              <input type="text" id="pnoun1" name="plu1"><br><br>
+              <label for="email">adjective:</label>
+              <input type="text" id="adj2" name="adj2"><br><br>
+              <label for="email">plural noun:</label>
+              <input type="text" id="pnoun2" name="plu2"><br><br>
+              <label for="email">adjective:</label>
+              <input type="text" id="adj3" name="adj3"><br><br>
+              <label for="email">noun:</label>
+              <input type="text" id="n1" name="noun1"><br><br>
+              <label for="email">verb ending in ing:</label>
+              <input type="text" id="verbing" name="vering"><br><br>
+              <label for="email">noun:</label>
+              <input type="text" id="n2" name="noun2"><br><br>
+              <button type="button" onclick="saveFormData()">Save</button>
+          </form>
+          </div>
       </div>
-    </div>
   </body>
-	<script src="index.js"></script>
-  </body>
+
 </html>
 
