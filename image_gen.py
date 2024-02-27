@@ -31,7 +31,7 @@ def imageGen(prompt, picNum, secondaryPrompt):
     headers = {
     "Accept": "application/json",
     "Content-Type": "application/json",
-    "Authorization": "Bearer key",
+    "Authorization": "Bearer sk-yHys1bvlJURBvIKHA4NNsZNGvpX5mIa257RAiWUlZqzjOkVz",
     }
 
     response = requests.post(
