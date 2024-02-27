@@ -31,7 +31,7 @@ def imageGen(prompt, picNum, secondaryPrompt):
     headers = {
     "Accept": "application/json",
     "Content-Type": "application/json",
-    "Authorization": "Bearer sk-yHys1bvlJURBvIKHA4NNsZNGvpX5mIa257RAiWUlZqzjOkVz",
+    "Authorization": "Bearer key",
     }
 
     response = requests.post(
@@ -50,5 +50,5 @@ def imageGen(prompt, picNum, secondaryPrompt):
         os.makedirs("./out")
 
     for i, image in enumerate(data["artifacts"]):
-        with open(f'./out/txt2img_{picNum}.png', "wb") as f:
+        with open(f'./out/img{picNum}.jpg', "wb") as f:
             f.write(base64.b64decode(image["base64"]))
